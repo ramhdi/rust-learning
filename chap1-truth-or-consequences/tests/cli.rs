@@ -5,7 +5,7 @@ use assert_cmd::Command;
 // checks if main program prints correct output
 #[test]
 fn runs() {
-    let mut cmd = Command::cargo_bin("chap1-truth-or-consequences").unwrap();
+    let mut cmd = Command::cargo_bin("hello").unwrap();
     cmd.assert().success().stdout("Hello, world!\n");
 }
 
